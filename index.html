@@ -1,19 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-  	<meta charset="utf-8">
-  	<meta name="description" content="Your description goes here">
-  	<meta name="keywords" content="one, two, three">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-		
-		<title>Blank Template</title>
+    	<meta charset="utf-8">
+    	<meta name="description" content="The efficient accounting company for you!">
+    	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Action Accounting</title>
 
 		<!-- external CSS link -->
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet"> 
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="style.css">
+		<script src="https://kit.fontawesome.com/48d97972cb.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
+		<!-- Header -->
+			<header id="header" class="alt">
+				<a href="index.html" id="headerLogo"><img src="logo.svg"></a>
+				<nav>
+					<a href="#menu" onclick="openNav()"><i class="fa-solid fa-bars"></i></a>
+				</nav>
+			</header>
+		<!-- Menu -->
+		<div id="myNav" class="overlay">
+			<nav id="menu" class="overlay-content ">
+				<div class="inner">
+					<h2>Menu</h2>
+					<a href="#">Home</a>
+					<a href="#services">Services</a>
+					<a href="#about">About</a>
+					<a href="#team">Team</a>
+					<a href="#contact">Contact</a>
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				</div>
+			</nav>
+		</div>
+		<!-- Banner -->
+			<section id="banner">
+				<div class="inner">
+					<img src="logo.svg" alt="action accounting logo">
+					<p>Effective, Reliable, Accessible</p>
+				</div>
+			</section>
+		
+		<section id="services">
+			<h2>What We Offer</h2>
+			<div id="servInner">
+				<div>
+					<i class="fa-solid fa-list-check"></i>
+					<h3>Tax Services</h3>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos obcaecati sapiente amet aliquid aperiam, voluptatem sit illum labore voluptates expedita neque blanditiis.</p>
+				</div>
+				<div>
+					<i class="fa-solid fa-comments"></i>
+					<h3>Advising and Consulting</h3>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque quaerat modi sapiente qui sed exercitationem quas enim. Omnis, architecto modi at du.</p>
+				</div>
+				<div>
+					<i class="fa-solid fa-laptop-file"></i>
+					<h3>Personal & Business Accounting</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam non officia esse. Dicta laudantium accusantium architecto vero provident voluptatibus.</p>
+				</div>
+			</div>
+		</section>
 
-		<script type="text/javascript" src="js/main.js"></script>
+		<section class="borderSect" id="about">
+			<h2>About Us</h2>
+			<p>Action Accounting is an accounting firm providing high-quality services for both personal and business needs. We are a team of experienced accountants who are passionate and excited to help you. We are focused on making your life easier, whether by finding the most effective solutions to your problems, advising on the best course of action, or helping you understand the complexities of any financial situation.</p>
+		</section>
+
+		<section class="borderSect" id="team">
+			<h2>Our Team</h2>
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda autem fugiat tempora ducimus ipsam sequi dolorem? Magnam ipsam perspiciatis, nulla assumenda beatae velit excepturi doloribus, quam nemo vero expedita modi.</p>
+			<div id="teamInner">
+				<div>
+					<img src="pers1.jpg" alt="photo of ">
+					<h3>Nur B. Martins</h3>
+					<p class="qualText">CPA, CA, CMA</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla voluptates ipsam molestias eligendi amet magnam commodi sapiente delectus ea magni doloribus tempore fugit, non quae iste blanditiis aspernatur itaque? Illo.</p>
+				</div>
+				<div>
+					<img src="pers2.jpg" alt="photo of ">
+					<h3>Dominique Dubois</h3>
+					<p class="qualText">CPA, CA</p>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, incidunt temporibus? At natus quisquam nostrum placeat quaerat provident quibusdam consectetur quidem! Sequi repudiandae distinctio sit culpa animi. Eaque, eum vitae.</p>
+				</div>
+				<div>
+					<img src="pers3.jpg" alt="photo of ">
+					<h3>Leila Kaur</h3>
+					<p class="qualText">CPA, CGA</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis voluptas quae voluptatem blanditiis totam, quisquam dicta vitae enim eligendi. Minima optio autem ipsam asperiores non sit vel iusto doloremque dolorem.</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact">
+			<h2>Contact Us</h2>
+			<div id="contactInner">
+				<p>Whether you are interested in a specific service or simply want to learn more, feel free to contact us through our form right here, or via email or telephone. For new clients, we offer a free initial consultation.</p>
+				<form name="contact" method="POST" data-netlify="true">
+					<p>
+					  <input type="text" name="name" placeholder="Your Name" required />
+					</p>
+					<p>
+					  <input type="email" name="email" placeholder="Your Email" required />
+					</p>
+					<p class="wideBox">
+					  <textarea name="message" placeholder="Write your message here" required ></textarea>
+					</p>
+					<p class="wideBox">
+					  <button type="submit">Send</button>
+					</p>
+				</form>
+				<div id="contactInfo">
+					<div class="contactDetail"><i class="fa-solid fa-envelope"></i><p>contact@actaccounting.com</p></div>
+					<div class="contactDetail"><i class="fa-solid fa-phone"></i><p>514-123-1234</p></div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<p>Design &copy; <a href="https://alexdurlut.netlify.app/">Alex Durlut</a></p>
+			<p>Images: <a href="https://www.pexels.com/">Pexels</a> & <a href="https://this-person-does-not-exist.com/en">TPDNE</a></p>
+		</footer>
+		
+		<script type="text/javascript" src="main.js"></script>
 	</body>
 </html>
