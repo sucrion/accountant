@@ -251,6 +251,8 @@ nav a {
 
 #teamInner img {
      width: 250px;
+     border: 5px solid #76c9db77;
+     border-radius: 5px;
 }
 
 #teamInner h3 {
@@ -320,13 +322,12 @@ nav a {
 }
 
 #contact button {
-     width: 4em;
-     height: 2em;
      transition-duration: 0.3s;
      background-color: #5caab9;
      color: white;
      border-radius: 5px;
      border: none;
+     padding: 0.5em 2em;
 }
 
 #contact button:hover {
