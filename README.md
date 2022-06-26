@@ -12,7 +12,7 @@ This is a demo site for an accounting business. The idea was to build something 
 
 The site was mostly built from scratch (aside from the JS for the menu), with code written by hand in HTML, CSS, and JS. The logo was created in Inkscape and the images edited in Photoshop. 
 
-## Optimizations
+## Optimizations:
 
 The header does not fully function as intended, though the issue is minor (logo appears on page load when it shouldn't). Upon scrolling, it works as it should. Additionally, copy could be added to flesh out the site, but that is not the focus here. 
 
